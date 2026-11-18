@@ -160,6 +160,8 @@ body {
     font-size: .5rem;
     line-height: 1.50;
     font-weight: 300;
+    text-align: center;
+    width: 100%;
 }
 
 .intro-divider {
@@ -294,6 +296,21 @@ body {
     letter-spacing: .025em;
 }
 
+.copyright {
+    margin-top: 12px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #917f91;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    opacity: 0.8;
+}
+
+.copyright span {
+    color: #C04483;
+}
+
 @keyframes float {
     from { transform: translate3d(0, 0, 0) scale(1); }
     to { transform: translate3d(18px, -20px, 0) scale(1.06); }
@@ -302,7 +319,17 @@ body {
 @media (max-width: 480px) {
     .contact-page { width: min(100% - 28px, 560px); padding-top: 36px; }
     .brand-logo { width: clamp(245px, 76vw, 320px); max-height: 170px; margin-bottom: 18px; }
-    .intro-copy { max-width: 310px; font-size: .86rem; }
+    
+    .intro-copy {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 12px;
+        margin: 12px auto 0;
+        font-size: .86rem;
+        line-height: 1.5;
+        text-align: center;
+    }
     .contact-links { gap: 10px; }
     .contact-card { min-height: 76px; padding: 11px 14px; border-radius: 17px; gap: 12px; }
     .contact-icon { flex-basis: 48px; width: 48px; height: 48px; border-radius: 14px; }
